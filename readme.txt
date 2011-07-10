@@ -4,7 +4,7 @@ Donate link: http://beapi.fr/donate
 Tags: author, mentions, permalink, automatic, user, posts
 Requires at least: 3.1
 Tested up to: 3.2
-Stable tag: 1.0
+Stable tag: 1.1
 
 == Description ==
 

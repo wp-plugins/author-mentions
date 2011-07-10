@@ -2,7 +2,7 @@
 /*
 Plugin Name: Author mentions
 Description: Replace each `@wordpress user_login@` by the user posts page link in your posts contents.
-Version: 1.0
+Version: 1.1
 Author: Benjamin Niess
 Author URI: http://www.benjamin-niess.fr
 
