@@ -2,7 +2,7 @@
 /*
 Plugin Name: Author mentions
 Description: Replace each `@wordpress user_login@` by the user posts page link in your posts contents.
-Version: 1.1
+Version: 1.1.1
 Author: Benjamin Niess
 Author URI: http://www.benjamin-niess.fr
 
@@ -24,17 +24,17 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
 if ( !is_admin() )
-	add_filter( 'the_content', 'autor_mentions_function' );
+	add_filter( 'the_content', 'link_author_mentions' );
 
 /**
- * Replace @authors inside the_content
+ * Replace @authors@ inside the_content
  * 
- * @param string $the_content the post content
+ * @param string $content the post content
  * @return string the content with new permalink on mentions
  * @author Benjamin Niess
  */
-function autor_mentions_function( $the_content ) {
-	return preg_replace_callback( '/@[a-zA-Z]*@/', 'content_callback', $the_content );
+function link_author_mentions( $content ) {
+	return preg_replace_callback( '/@[a-zA-Z]*@/', 'content_callback', $content );
 }
 
 /*
@@ -52,7 +52,7 @@ function content_callback( $mention ) {
 	// Check if the user exists
 	$user = get_userdatabylogin( $split_a[0] );
 	if ( empty( $user ) || !isset( $user->user_login ) || empty( $user->user_login ) ){
-		return $mention[0];
+		return $mention;
 	}
 	
 	// Return the correct link without @@ and with the user display name
