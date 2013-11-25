@@ -3,8 +3,8 @@ Contributors: benjaminniess
 Donate link: http://beapi.fr/donate
 Tags: author, mentions, permalink, automatic, user, posts
 Requires at least: 3.1
-Tested up to: 3.2
-Stable tag: 1.1.1
+Tested up to: 3.7.1
+Stable tag: 1.2
 
 == Description ==
 
@@ -31,9 +31,11 @@ Make sure that you wrote the user login and not the user firstname, name or disp
 
 == Changelog ==
 
-* 1.0
-	* First release
-
+* 1.2
+	* Code refactoring
+	* Still work but need to be updated to hide "Warning" in repo
 * 1.1.1
 	* Change functions name
 	* Fix minor bug on the return param
+* 1.0
+	* First release
