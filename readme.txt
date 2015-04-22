@@ -3,8 +3,8 @@ Contributors: benjaminniess
 Donate link: http://beapi.fr/donate
 Tags: author, mentions, permalink, automatic, user, posts
 Requires at least: 3.1
-Tested up to: 3.7.1
-Stable tag: 1.2
+Tested up to: 4.2
+Stable tag: 1.3
 
 == Description ==
 
@@ -27,10 +27,19 @@ You only need to get the user login and to surround it with two @ like the @logi
 
 = I put my friend login surrounded by two @ but there is no link =
 
-Make sure that you wrote the user login and not the user firstname, name or display name. 
+Make sure that you wrote the user login and not the user firstname, name or display name.
+
+
+== Screenshots ==
+
+1. The admin editor with an example of username
+2. The front-end with an automatic link to this author's archive page
 
 == Changelog ==
 
+* 1.3
+    * Refactor code in a class
+    * Removed deprecated function
 * 1.2
 	* Code refactoring
 	* Still work but need to be updated to hide "Warning" in repo
